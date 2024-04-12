@@ -706,13 +706,17 @@ Created powerful Content Management Systems to serve as interface for client  </
                                 <textarea class="form-control" id=" placeholder="Message *" rows="7" required></textarea>
                             </div>
                             <div class="form-group ">
-                                <button type="submit" class="form-control btn btn-primary" >Send Message</button>  
+                               <button type="submit" button class="form-control large btn btn-primary" onclick="myFunction()">
+                               <a class="social-link text-dark" href=" https://mail.google.com/mail/kabitayesmin4@gmail.com/"><i class="ti-email" aria-hidden="true"></i>Send Message</a></li></button>
+                               
+                               
                             </div>
                         </form> 
                     </div>
                 </div>   
              
-                <div class="col-lg-4">
+
+
 
                     <div class="contact-info-card">
                         <h4 class="contact-title">Get in touch</h4>
@@ -767,8 +771,13 @@ Created powerful Content Management Systems to serve as interface for client  </
             
     </footer>
         </div>
-        
-           
+        <script>
+function myFunction()
+location.href = "mailto:kabitayesmin4@gmail.com";
+window.location.href = "mailto:" + emailTo + "?cc=" + emailCC + "&subject=" + emailSubject + "&body=" + emailBody; {
+  
+}
+        </script>
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
 
